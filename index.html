@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Crud Banco</title>
+    </head>
+    <body>
+        <H3>Digite as informações necessarias para a movimentação do seu banco.</H3>
+        
+        <form action="" id="formulario">
+            <label for="nome">Nome:<input id="nome" name="nome" type="text"></label>
+            <label for="cpf">CPF:<input id="cpf" name="cpf" type="number"></label>
+            <label for="conta">Conta:<input id="conta" name="conta" type="number"></label>
+            <label for="agencia">Agência:<input id="agencia" name="agencia" type="number"></label>
+            <select class="tipoConta">
+                <option value="poupanca">Poupança</option>
+                <option value="corrente">Corrente</option>
+            </select>
+            <button type="reset" class="enviar">Enviar</button>
+        </form>
+        
+        <form class="movimentacaoS">
+            <label for="saque">Digite o valor do saque:<input id="saque" name="saque" type="number"></label>
+            <button type="reset" onclick="sacar()">Sacar</button>
+        </form>
+
+        <form class="movimentacaoD">
+            <label for="deposito">Digite o valor do depósito:<input id="deposito" name="deposito" type="number"></label>
+            <button type="reset" onclick="depositar()">Depositar</button>
+        </form>
+        
+        <div id="container"></div>
+    </body>
+    <script src="script.js"></script>
+</html>

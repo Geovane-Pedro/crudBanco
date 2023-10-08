@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+h3{
+    margin: 2%;
+    text-align: center;
+}
+button{
+    cursor: pointer;
+}
+#formulario{
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+.movimentacaoS{
+    display: none; 
+}
+.movimentacaoD{
+    display: none; 
+}
+.hide{
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+.butao{
+    display: flex;
+    flex-direction: row;
+}
+.dadosBanco{
+    margin-top: 4%;
+}
